@@ -177,6 +177,10 @@ namespace TeslaBLE
         bool isOn,
         pb_byte_t *output_buffer,
         size_t *output_length);
+    
+    int buildGetVehicleDataMessage(
+        pb_byte_t *output_buffer,
+        size_t *output_length);
 
     Peer *getPeer(UniversalMessage_Domain domain)
     {
